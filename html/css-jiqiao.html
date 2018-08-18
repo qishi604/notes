@@ -1,0 +1,84 @@
+<h1>Web 开发技巧</h1>
+
+<ul><li>Height:100%</li></ul>
+
+<p>想让<code>height:100%;</code>生效，可以设置</p>
+
+<p><code>css
+.match-parent {
+  display:absolute;
+  top:0;
+  bottom:0;
+  overflow:auto;
+  height:100%;
+}
+</code></p>
+
+<ul><li>英文换行</li></ul>
+
+<p><code>css
+.text-multi {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+</code></p>
+
+<ul><li>ios native 滚动效果</li></ul>
+
+<p><code></code>`css
+.ios-scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}</p>
+
+<p><code></code>`</p>
+
+<ul><li>移动端禁止选中内容</li></ul>
+
+<p><code>css
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+</code></p>
+
+<ul><li>移动端取消touch高亮效果</li></ul>
+
+<p><code>css
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+</code></p>
+
+<ul><li>Ios 禁止保存或拷贝图像</li></ul>
+
+<p><code></code>`css
+img {
+  -webkit-touch-callout: none;
+}</p>
+
+<p><code></code>`</p>
+
+<ul><li>input placeholder color</li></ul>
+
+<p><code>css
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #909;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #909;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #909;
+}
+</code></p>
+
+<h2>参考</h2>
+
+<ul><li><a href="http://ljinkai.github.io/2015/06/06/mobile-web-skill/">移动端web开发技巧</a></li><li><a href="http://zh.learnlayout.com/">learn layout</a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/">MDN CSS</a></li></ul>
